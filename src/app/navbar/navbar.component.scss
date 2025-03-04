@@ -1,8 +1,21 @@
-.logo
-{
-  width: 20%;
-  height: auto;
-  border-radius: 50%;
-  padding: 2px 2px;
-  margin: 2px auto ;
+.logo{
+  width: 22%;
+  margin: 2px 2px !important;
+}
+.navlogo{
+  width: 70%;
+}
+
+.nav-link:hover{
+color: #FF5A58!important;
+}
+
+.nav-item:active{
+  color: #FF5A58!important ;
+
+}
+@media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
+  .logo{
+    width: 45%;
+  }
 }

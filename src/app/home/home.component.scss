@@ -27,3 +27,12 @@ span{
   position: relative;
   top: -2.5px;
 }
+
+@media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
+  .lower-cards {
+   position: relative;
+   left:15px;
+   width: 100%;
+  }
+}
+
