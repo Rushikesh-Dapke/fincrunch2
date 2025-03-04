@@ -11,4 +11,5 @@ export class FooterComponent {
 contact=environment.contactMail
 business=environment.businessMail
 career=environment.careerMail
+address=environment.address
 }
