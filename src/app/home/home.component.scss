@@ -33,12 +33,85 @@ span{
     float: left;
     font-size: 60px;
     color: #2e2d2e;
-    padding-top: 80px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+.title::after{
+      content: '';
+    background-color: #ff5a58;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    right: initial;
+    top: 0px;
+    margin: 50PX auto;
+    display: flex
+;
+    justify-content: center;
+    height: 7px;
+    left: 0;
+    border-radius: 100px;
+}
+
+.title_heading{
+  width: 100%;
+    float: left;
+    font-size: 34px;
+    color: #282c47;
+    padding-top: 10px;
+
     font-weight: bold;
 }
 
+.title_heading::after{
+  content: '';
+  background-color: #ff5a58;
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  right: initial;
+  top: 0px;
+  margin: 0 auto;
+  display: flex
+;
+  justify-content: center;
+  height: 7px;
+  left: 0;
+  border-radius: 100px;
+}
 
-@media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
+
+.center_title{
+  width: 100%;
+  float: left;
+  font-size: 34px;
+  color: #060606;
+  padding-top: 10px;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.center_title::after{
+  content: '';
+    background-color: #ff5a58;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    right: 0;
+    top: 0px;
+    margin: 0 auto;
+    display: flex
+;
+    justify-content: center;
+    height: 7px;
+    left: 0;
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width: 768px) { 
   .lower-cards {
    position: relative;
    left:15px;
