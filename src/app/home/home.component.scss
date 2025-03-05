@@ -1,5 +1,6 @@
 span{
   color: #FF8A00 ;
+  font-weight: 400!important;
 }
 
 .services_title{
@@ -27,6 +28,15 @@ span{
   position: relative;
   top: -2.5px;
 }
+.title{
+  width: 100%;
+    float: left;
+    font-size: 60px;
+    color: #2e2d2e;
+    padding-top: 80px;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
   .lower-cards {
@@ -35,4 +45,5 @@ span{
    width: 100%;
   }
 }
+
 
