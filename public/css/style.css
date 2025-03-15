@@ -505,7 +505,7 @@ button {
 .project_main{
     width: 100%;
     float: left;
-    padding-top: 200px;
+    padding-top: 90px;
 }
 .image_6 {
     width: 100%;
@@ -749,10 +749,14 @@ button {
     font-size: 18px;
     color: #666666;
     background-color: transparent !important;
-    border-bottom: 1px solid #050000 !important;
+    border-bottom: 0.5px solid #ff5a58 !important;
     padding-right: 20px;
-    border: 0px;
+    border: 0px solid ;
     padding-top: 20px;
+    margin :10px;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 15px ;
 }
 .massage_text {
     width: 100%;
@@ -760,11 +764,15 @@ button {
     font-size: 18px;
     color: #666666;
     background-color: transparent !important;
-    border-bottom: 1px solid #050000 !important;
+    border-bottom: 0.5px solid #ff5a58 !important;
     padding-right: 20px;
     border: 0px;
     height: 70px;
     padding-top: 30px;
+    margin :10px;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 15px ;
 }
 .send_bt {
     width: 170px;
@@ -895,4 +903,10 @@ button {
 }
 .margin_top_90{
   margin-top: 90px;
+}
+@media screen and (max-width: 768px)  {
+    .mail_section {
+        position:relative;
+        left:-25%
+    }
 }
