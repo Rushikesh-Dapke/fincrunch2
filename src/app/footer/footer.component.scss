@@ -1,0 +1,44 @@
+a:hover{
+  color:  #FF5A58!important;
+}
+
+.subscribe_bt a  {
+  position: relative!important;
+  left: 45px!important;
+  border-radius: 30px;
+}
+.footer_social_icon{
+  position: relative;
+    left: 50px;
+}
+.newsletter input{
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter input{
+    width: 60%;
+    border-radius: 20px;
+  }
+  .subscribe_bt a  {
+   padding: 5px 5px !important ;
+   font-size: 20px !important;
+   width: 35%;
+  }
+  .subscribe_bt   {
+    position: relative!important;
+    top: -65px;
+    left: 210px!important;
+    border-radius: 30px;
+  }
+  .footer_social_icon{
+    position: relative;
+    left: 167px;
+    margin-top: -25px!important;
+  }
+  .copyright_text{
+    position: relative;
+    left:-15px
+  }
+ 
+}

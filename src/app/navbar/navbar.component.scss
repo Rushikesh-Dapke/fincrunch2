@@ -1,0 +1,44 @@
+.logo{
+  width: 22%;
+  margin: 2px 2px !important;
+}
+.position_navbar{
+  position: absolute !important;
+  top: 0px;
+  z-index: 1 !important;
+  box-shadow: 1px 2px 15px;
+
+
+}
+nav{
+  // background-color: #7272728c;
+  backdrop-filter: blur(10px);
+}
+
+.navbar_sticky{
+  position:fixed;
+  z-index: 1000;
+  box-shadow: 1px 2px 15px;
+
+}
+
+.navlogo{
+  width: 43%;
+}
+
+.nav-link:hover{
+color: #FF5A58!important;
+}
+
+.nav-item:active{
+  color: #FF5A58!important ;
+
+}
+
+
+@media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
+  .logo{
+    width: 43%;
+  }
+
+}

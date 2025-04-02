@@ -1,0 +1,59 @@
+<div class="contact_section layout_padding ">
+  <div class="container-fluid">
+    <h1 class="what_taital">Contact us</h1>
+    <p class="amet_text">Let's Talk Numbers, Strategy, and Success—Get in Touch Today!</p>
+    <div class="contact_section2">
+      <div class="row  form_contact">
+        <div class="col-md-6 padding_left_0 "  >
+          <div class="mail_section">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div>
+                <label for="name">Name:</label>
+                <input class="mail_text_1" type="text" id="name" formControlName="name" />
+                <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                  <p *ngIf="contactForm.get('name')?.errors?.['required']">Name is required.</p>
+                </div>
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input class="mail_text_1" type="email" id="email" formControlName="email" />
+                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                  <p *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</p>
+                  <p *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email format.</p>
+                </div>
+              </div>
+              <div>
+                <label for="contactNumber">Contact Number:</label>
+                <input class="mail_text_1" type="text" id="contactNumber" formControlName="contactNumber" />
+                <div *ngIf="contactForm.get('contactNumber')?.invalid && contactForm.get('contactNumber')?.touched">
+                  <p *ngIf="contactForm.get('contactNumber')?.errors?.['required']">Contact number is required.</p>
+                </div>
+              </div>
+              <div>
+                <label for="message">Message:</label>
+                <textarea class="massage_text" id="message" formControlName="message"></textarea>
+                <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                  <p *ngIf="contactForm.get('message')?.errors?.['required']">Message is required.</p>
+                </div>
+              </div>
+              <button class="send_bt" type="submit" [disabled]="contactForm.invalid">Send Email</button>
+              <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+              <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+            </form>
+
+            <!-- <input type="" class="mail_text_1" placeholder="Name" name="Name">
+            <input type="" class="mail_text_1" placeholder="Phone Number" name="Phone Number">
+            <input type="" class="mail_text_1" placeholder="Email" name="Email">
+            <textarea class="massage_text" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
+            <div class="send_bt"><a href="#">Send</a></div> -->
+          </div>
+        </div>
+        <!-- <div class="col-md-6 padding_0">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3538514548695!2d75.39563437950595!3d19.867274833824414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3086f1fe05b%3A0x2b337c6384264d60!2sSara%20Gokuldham!5e0!3m2!1sen!2sin!4v1741081284820!5m2!1sen!2sin" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
