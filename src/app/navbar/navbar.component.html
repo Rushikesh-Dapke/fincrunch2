@@ -13,9 +13,20 @@
         <li class="nav-item">
           <a class="nav-link" routerLink='/about' routerLinkActive="about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink='/services' routerLinkActive="our-services">Services</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="dropdown-item"><a routerLink='/financial-modeling' routerLinkActive="services">Financial Modeling</a></li>
+            <li class="dropdown-item"><a routerLink='/investment-research' routerLinkActive="services">Investment Research</a></li>
+            <li class="dropdown-item"><a routerLink='/dedicated-analyst' routerLinkActive="services">Dedicated Analyst</a></li>
+            <li class="dropdown-item"><a routerLink='/bespoke-project' routerLinkActive="services">Bespoke Project</a></li>
+            <li class="dropdown-item"><a routerLink='/benchmarking-project' routerLinkActive="services">Benchmarking Project</a></li>
+            
+          </ul>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" routerLink='/#' routerLinkActive="#">Career</a>
         </li>
