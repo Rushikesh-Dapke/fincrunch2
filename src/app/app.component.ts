@@ -4,6 +4,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { FooterComponent } from "./footer/footer.component";
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
+import { environment } from '../environments/environment.development';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { filter } from 'rxjs';
 })
 export class AppComponent {
   title = 'fincrunch_website';
+  whatsapp=environment.whatsapp
   constructor(private router: Router) {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -20,4 +22,5 @@ export class AppComponent {
         window.scrollTo(0, 0); // Scroll to top
       });
   }
+  
 }

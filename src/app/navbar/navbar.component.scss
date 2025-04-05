@@ -34,6 +34,12 @@ color: #FF5A58!important;
   color: #FF5A58!important ;
 
 }
+.navbar-collapse {
+  display: none;
+}
+.navbar-collapse.show {
+  display: block;
+}
 
 
 @media screen and (max-width: 768px) { /* Target devices with width ≤ 768px */
@@ -41,4 +47,10 @@ color: #FF5A58!important;
     width: 43%;
   }
 
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
 }
