@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../environments/environment.development';
 
 @Component({
   selector: 'app-benchmarking-project',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './benchmarking-project.component.scss'
 })
 export class BenchmarkingProjectComponent {
-
+business_mail=environment.businessMail
 }

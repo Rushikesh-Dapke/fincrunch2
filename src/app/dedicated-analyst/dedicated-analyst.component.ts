@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../environments/environment.development';
 
 @Component({
   selector: 'app-dedicated-analyst',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './dedicated-analyst.component.scss'
 })
 export class DedicatedAnalystComponent {
-
+business_mail=environment.businessMail
 }

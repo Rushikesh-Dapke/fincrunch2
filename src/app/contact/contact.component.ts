@@ -28,7 +28,7 @@ export class ContactComponent {
     if (this.contactForm.valid) {
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
-      this.http.post<any>('https://web.fincrunch.in/send_email.php', this.contactForm.value, { headers }).subscribe({
+      this.http.post<any>('https://fincrunch.in/api/send_email.php', this.contactForm.value, { headers }).subscribe({
         next: (response) => {
           if (response.success) {
             this.successMessage = response.success;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../environments/environment.development';
 
 @Component({
   selector: 'app-financial-modeling',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './financial-modeling.component.scss'
 })
 export class FinancialModelingComponent {
-
+  business_mail=environment.businessMail
 }
