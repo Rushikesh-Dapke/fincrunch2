@@ -131,6 +131,11 @@ span{
   margin-top: 150px;
 }
 
+.lower-cards{
+  position: relative;
+  left: -1px !important;
+}
+
 // .home_float_button{
 //   position: fixed;
 //   top:80%;
@@ -157,7 +162,7 @@ span{
 @media screen and (max-width: 768px) { 
   .lower-cards {
    position: relative;
-   left:15px;
+   left:15px !important;
    width: 100%;
   }
 

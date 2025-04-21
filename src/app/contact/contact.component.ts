@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { environment } from '../../environments/environment.development';
 
 
 @Component({
@@ -11,6 +12,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  contact = environment.contactMail;
   contactForm: FormGroup;
   successMessage: string | null = null;
   errorMessage: string | null = null;
@@ -41,6 +43,7 @@ export class ContactComponent {
         },
         error: (error) => {
           this.errorMessage = 'An error occurred. Please try again.';
+          window.location.href ='mailto:{{contact}}';
           console.error(error);
           this.successMessage = null;
         },

@@ -10,6 +10,7 @@ import { BespokeProjectComponent } from './bespoke-project/bespoke-project.compo
 import { BenchmarkingProjectComponent } from './benchmarking-project/benchmarking-project.component';
 import { CareerComponent } from './career/career.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
+import { FinancialConsensusComponent } from './financial-consensus/financial-consensus.component';
 
 export const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -23,7 +24,8 @@ export const routes: Routes = [
   {path:'bespoke-project',component:BespokeProjectComponent},
   {path:'benchmarking-project',component:BenchmarkingProjectComponent},
   {path:'career',component:CareerComponent},
-  {path:'case-study',component:CaseStudyComponent}
+  {path:'case-study',component:CaseStudyComponent},
+  {path:'financial-consensus',component:FinancialConsensusComponent},
   
 
 

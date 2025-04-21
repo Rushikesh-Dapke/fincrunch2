@@ -5,23 +5,32 @@
     <div class="contact_section2">
       <div class="row  form_contact">
         <div class="col-md-6 padding_left_0 "  >
+          
           <div class="mail_section">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-              <div>
-                <label for="name">Name:</label>
-                <input class="mail_text_1" type="text" id="name" formControlName="name" />
-                <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-                  <p *ngIf="contactForm.get('name')?.errors?.['required']">Name is required.</p>
+              <div class="row mb-3">
+              <div class="col-md-6">
+                <div>
+                  <label for="name">Name:</label>
+                  <input class="mail_text_1" type="text" id="name" formControlName="name" />
+                  <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                    <p *ngIf="contactForm.get('name')?.errors?.['required']">Name is required.</p>
+                  </div>
                 </div>
               </div>
-              <div>
-                <label for="email">Email:</label>
-                <input class="mail_text_1" type="email" id="email" formControlName="email" />
-                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
-                  <p *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</p>
-                  <p *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email format.</p>
+              <div class="col-md-6">
+                <div>
+                  <label for="email">Email:</label>
+                  <input class="mail_text_1" type="email" id="email" formControlName="email" />
+                  <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                    <p *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</p>
+                    <p *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email format.</p>
+                  </div>
                 </div>
               </div>
+              </div>
+              
+              
               <div>
                 <label for="contactNumber">Contact Number:</label>
                 <input class="mail_text_1" type="text" id="contactNumber" formControlName="contactNumber" />
@@ -29,7 +38,7 @@
                   <p *ngIf="contactForm.get('contactNumber')?.errors?.['required']">Contact number is required.</p>
                 </div>
               </div>
-              <div>
+              <div >
                 <label for="message">Message:</label>
                 <textarea class="massage_text" id="message" formControlName="message"></textarea>
                 <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
