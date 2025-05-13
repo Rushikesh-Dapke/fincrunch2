@@ -15,6 +15,15 @@ import { environment } from '../environments/environment.development';
 export class AppComponent {
   title = 'fincrunch_website';
   whatsapp=environment.whatsapp
+
+  redirectToWhatsApp() {
+  const phoneNumber = '919082289921'; 
+  const text_message ='Hello FinCrunch'
+  const message = encodeURIComponent('Hello FinCrunch');
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(url, '_blank');
+}
+
   constructor(private router: Router) {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
