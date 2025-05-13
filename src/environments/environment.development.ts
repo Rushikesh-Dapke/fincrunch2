@@ -3,5 +3,5 @@ export const environment = {
   businessMail:'business@fincrunch.in',
   careerMail:'hr@fincrunch.in',
   address:'114, B-wing, Sara Gokuldhaam, Airport Road, Chikhalthana,Aurangabad',
-  whatsapp:''
+  whatsapp:'9082289921'
 };
