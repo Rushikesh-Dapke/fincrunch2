@@ -275,12 +275,18 @@ button {
     font-weight: bold;
 }
 
+.main_text{
+     float: left;
+    font-size: 17px;
+    color: #060606;
+    position: relative;
+    top: 80px;
+}
 .banner_text {
-    width: 90%;
     float: left;
-    font-size: 16px;
+    font-size: 17px;
     color: #2e2d2e;
-    margin-left: 0px;
+    
 }
 .btn_main {
     width: 100%;
@@ -908,5 +914,12 @@ button {
     .mail_section {
         position:relative;
         left:-25%
+    }
+    .banner_img{
+         margin-top: 20px;
+    }
+    .main_text{
+        position: relative;
+        top: 140px;
     }
 }
